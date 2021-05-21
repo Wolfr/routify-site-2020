@@ -13,6 +13,15 @@
     <p>
       There are a million ways to handle navigation. Hopefully, this page can save you some time when creating navigation for your next project.
     </p>
+    
+    <Note>
+      <p>
+        Svelte transitions can occasionally prevent a page from dismounting correctly. If you face this issue, you can add <code>|local</code> to the transition (example below) and this should resolve the issue.
+      </p>
+      <code>
+        transition:fade|local
+      </code>
+    </Note>
   </div>
   <div class="c-container-vertical c-container-vertical--small">
     <h3 class="c-h3">The url helper</h3>
